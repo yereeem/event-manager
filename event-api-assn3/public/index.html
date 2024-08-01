@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management API</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <h1>Event Management API</h1>
+  <h2>API Functions:</h2>
+  <div class="api-functions">
+    <h3>GET /events - Get a list of all events</h3>
+    <p class="url">Example URL: "localhost:3000/events"</p>
+  </div>
+  <div class="api-functions">
+    <h3>GET /events/:id - Get event by ID</h3>
+    <p class="url">Example URL: "localhost:3000/events/1"</p> 
+  </div>
+  <div class="api-functions">
+    <h3>GET /events/by-name/:name - Get event by Name</h3>
+    <p class="url">Example URL: "localhost:3000/events/by-name/April Graduation"</p> 
+  </div>
+  <div class="api-functions">
+    <h3>POST /events - Create a new event</h3>
+    <p class="url">Example URL: "localhost:3000/events"</p> 
+    <p>A POST request would require additional request body content sent (in json format) with the request in order to create a new event.</p>
+    <p>This means that a form of some sort to include input from the user, and processing to convert text to json would need to be implemented.</p>
+    <p>The specific parameters required in the request body to create a new event are as follows:</p>
+    <li>name</li>
+    <li>description</li>
+    <li>startdate</li>
+    <li>enddate</li>
+
+    <p class="note">* Each Event has an 'id' parameter, but it is incremented automatically by the database so it is not specified here. *</p>
+    <p class="note">** An example of testing the POST function of this EventsAPI using the POSTMAN extension on VSCode is shown below. **</p>
+  </div>
+  <div class="api-functions">
+    <h3>PUT /events/:id - Update event by ID</h3>
+    <p class="url">Example URL: "localhost:3000/events/2"</p> 
+    <p>
+      A PUT request specifies the ID of the specific event the user wishes to edit, and requires additional request body content to specify the event's updated content.
+      The PUT request should have the same parameters as shown for the post request, with edited values as required.
+    </p>
+    <p class="note">* The PUT request may be used to update any parameter of the Event, except for it's ID. *</p>
+  </div>
+  <div class="api-functions">
+    <h3>DELETE /events/:id - Delete event by ID</h3>
+    <p class="url">API route: "localhost:3000/events/1"</p>
+    <p class="note">* This API method does not require a request body, but it requires a form of some sort to allow user input and event handlers to process the delete request. *</p>
+  </div>
+  <div class="api-functions">
+    <h3>DELETE /events - Delete all events</h3>
+    <p class="url">API route: "localhost:3000/events"</p>
+    <p class="note">
+      * This API method does not require a request body, but it's functionality requires a button with an event handler rather than a URL. *
+    </p>
+  </div>
+  <div class="postman-test">
+    <h3>Postman Test Example:</h3>
+    <p>POST request as tested using the VSCode POSTMAN extension: </p>
+    <img src="apiPostTesting.png" alt="Screenshot of testing POST method of API using POSTMAN">
+    <p>
+      The image above displays the method set to "POST", and the url as specified above in the documentation "localhost:3000/events".
+      The request body is as shown in the documentation for POST, and sets values for each parameter. The request body is set to JSON.
+      As shown in the image, the request body does not include input for id, but because the sql database table was set to have the id 
+      increment automatically, the response body shows an id of 9. Because the request was successful, the status number shows "200 OK",
+      and the response body shows the created event in JSON format.
+    </p>
+  </div>
+</body>
+</html>

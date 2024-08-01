@@ -1,0 +1,50 @@
+.event-body {
+  margin: auto;
+  width: 70%;
+  color: white;
+  padding-bottom: 150px;
+}
+
+.buttons-search {
+  margin: auto;
+  width: 50%;
+}
+
+.buttons-search button {
+  margin: 5px;
+}
+
+.list-container {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.accordion {
+  background-color: #2222228e;
+}
+
+.accordion .accordion-item {
+  background-color: #22222222;
+  color: whitesmoke;
+}
+
+.accordion .accordion-button {
+  background-color: #2222228e;
+  color: azure;
+}
+
+.accordion :hover {
+  border-color: #646cff;
+  background-color: #646cff49;
+}
+
+/* Override the accordion animation speed */
+.accordion .collapse {
+  transition: height 0.5s ease;
+}
+
+.accordion .collapsing {
+  transition: height 0.5s ease;
+}

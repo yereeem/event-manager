@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #444444;
+  text-align: center;
+}
+
+.api-functions {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.api-functions h3 {
+  margin-top: 0;
+}
+
+p.url {
+  font-style: italic;
+  color: #007bff;
+}
+
+p.note {
+  font-style: italic;
+  color: rgb(1, 100, 1);
+}
+
+.postman-test {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.postman-test h3 {
+  color: #333;
+}
+
+.postman-test p {
+  margin: 5px 0;
+}
+
+.postman-test img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}

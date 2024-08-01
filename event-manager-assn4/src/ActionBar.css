@@ -1,0 +1,8 @@
+/* Navigation.css */
+
+.action-bar {
+  position: fixed;
+  z-index: 1000;
+  margin: 0;
+  top: 0;
+}

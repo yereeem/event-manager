@@ -1,0 +1,17 @@
+.box {
+  color: white;
+  padding: 200px;
+}
+
+.box h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.box p {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}

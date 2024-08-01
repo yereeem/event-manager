@@ -1,0 +1,16 @@
+.event-item {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 5px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add border for styling */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  margin: 10px; /* Add margin for spacing between items and between container */
+}
+
+.item-attributes {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
