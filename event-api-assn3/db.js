@@ -12,20 +12,6 @@ const dbConfig = {
 	password: ''
 }
 
-
-// Remember to uncomment this on submission!!
-/*
-// At uni:
-const dbConfig = {
-	host: 'learn-mysql.cms.waikato.ac.nz',
-	database: 'sh382',
-	user: 'sh382',
-	password: 'my194232sql'
-}
-*/
-
-
-
 // connect
 const db = mysql.createConnection(dbConfig);
 db.connect(err =>{
